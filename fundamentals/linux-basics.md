@@ -55,3 +55,22 @@ Linux definitely has a lot of commands. Each with a purpose and useful in its ow
 - joint files together and then split them
 - identified the word count of different files
 - Used man and what if to identify how certain commands are used
+
+**Day 3**
+## commands learned
+- chmod
+- chown
+- passwd
+- chgrp
+- sudo
+- su
+
+## Notes
+su just like sudo can be used to gain superuser privileges.
+It is recommended to actually gain superuser privileges temporarily instead of logging in as root.
+This is because operating continously as the root user increases the risk of making a critical system-altering mistake.
+
+## practice
+- Did bandit level 0 and level 1
+    - this was about using ssh to get into a user account 
+    - and navigating through the files to obtain passwords
