@@ -74,3 +74,18 @@ This is because operating continously as the root user increases the risk of mak
 - Did bandit level 0 and level 1
     - this was about using ssh to get into a user account 
     - and navigating through the files to obtain a password from a file called passwords.txt
+
+**Day 4**
+
+## Commands learnt
+this was mostly theory with a few commands involved like the:
+- bg
+- fg
+- nice
+- ps aux
+- ps -ef
+## Notes
+I learnt about the processes, how to create them, controlling the terminal, process termination
+I learnt about process states and niceness.
+I also learnt about signals and was surprised at the fact i've used special characters to invoke various signals without realizing it.
+lastly, i also learnt about /proc filesystem and djob control before ending the day.
