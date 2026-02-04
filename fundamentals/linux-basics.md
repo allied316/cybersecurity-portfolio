@@ -1,91 +1,81 @@
-#linux basics
-**Day 1**
-## commands learned
-- ls
-- cd
-- pwd
-- cp
-- mv
-- rm
-- nano
-- touch
-- file
-- grep
-- cut
-- paste
-- find
-- help
-- mkdir
+# Linux Fundamentals — Week 1
 
-## Notes
-linux is the foundation of offensive security. Understanding file systems, permissions and
-processes is critical
+## Objective
+To understand basic Linux navigation, file management, and system concepts
+used in penetration testing and security operations.
 
-## practice
-- Navigate directories
-- Created and deleted files
+Linux is the primary operating system used in offensive security tools such as
+Kali Linux, Parrot OS, and attack frameworks.
+
+---
+
+## Environment
+- OS: Kali Linux (VM)
+- Terminal: Bash
+- Practice Platforms: OverTheWire (Bandit)
+
+---
+
+## Core Commands Learned
+
+| Command | Purpose |
+|--------|---------|
+| ls     | List files and directories |
+| cd     | Change directory |
+| pwd    | Show current path |
+| mkdir  | Create directory |
+| touch  | Create file |
+| cp     | Copy files |
+| mv     | Move/rename files |
+| rm     | Delete files |
+| cat    | Display file contents |
+| less   | View large files |
+| find   | Search for files |
+| man    | Read manual pages |
+
+---
+
+## Permissions Basics
+Linux uses **read (r)**, **write (w)**, and **execute (x)** permissions.
+
+Example:
+```bash
+ls -l
+
+```
+# Output:
+-rw-r--r-- 1 user user file.txt
+
+- Owner: rw-
+- Group: r--
+- Others: r--
+
+# changing permissions
+```bash 
+chmod 755 script.sh
+
+```
+## Practical Exercises
+1. Directory Navigation
+2. File creation and Deletion
+3. Bandit Practice
+    completed Bandit levels 0-5
+    used:
+        cat
+        ls -a
+        cd
+        file
+        find
 
 
-    **Day 2**
-## commands learned
-- join and split
-- cat
-- less
-- history
-- copy
-- move
-- uniq
-- rm
-- head
-- tail
-- man
-- whatis
-- allias
-- wn and nc
-- tr
-- pipe and tee
-- env
-- expand and unexpand
+## Security Relevance
+Attackers and defenders rely on Linux for
+    - Log analysis
+    - Script execution
+    - Privilege escalation
+    - Network scanning
 
-## Notes
-Linux definitely has a lot of commands. Each with a purpose and useful in its own way. 
-
-## practice
-- Chained two commands together such that the stdout of one command become the stdin of another
-- joint files together and then split them
-- identified the word count of different files
-- Used man and what if to identify how certain commands are used
-
-**Day 3**
-## commands learned
-- chmod
-- chown
-- passwd
-- chgrp
-- sudo
-- su
-
-## Notes
-su just like sudo can be used to gain superuser privileges.
-It is recommended to actually gain superuser privileges temporarily instead of logging in as root.
-This is because operating continously as the root user increases the risk of making a critical system-altering mistake.
-
-## practice
-- Did bandit level 0 and level 1
-    - this was about using ssh to get into a user account 
-    - and navigating through the files to obtain a password from a file called passwords.txt
-
-**Day 4**
-
-## Commands learnt
-this was mostly theory with a few commands involved like the:
-- bg
-- fg
-- nice
-- ps aux
-- ps -ef
-## Notes
-I learnt about the processes, how to create them, controlling the terminal, process termination
-I learnt about process states and niceness.
-I also learnt about signals and was surprised at the fact i've used special characters to invoke various signals without realizing it.
-lastly, i also learnt about /proc filesystem and djob control before ending the day.
+## Lessons Learned
+The terminal is faster than GUI once practiced
+Permissions are critical for security
+Most hacking tools rely on linux command-line usage.
