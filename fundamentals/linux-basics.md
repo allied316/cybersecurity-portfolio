@@ -73,4 +73,7 @@ This is because operating continously as the root user increases the risk of mak
 ## practice
 - Did bandit level 0 and level 1
     - this was about using ssh to get into a user account 
+## practice
+- Did bandit level 0 and level 1
+    - this was about using ssh to get into a user account 
     - and navigating through the files to obtain password from a file call password.txt
